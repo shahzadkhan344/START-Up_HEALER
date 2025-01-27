@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <<<<---bootstrap link->>>>  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <<<<---icon-font->>>>  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <!-- <<<<---style.css->>>>  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        .portfolio-box {
+            height: 220px; /* Visible area height */
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+            overflow: hidden; /* Hides the overflowing part of the image */
+            border-radius: 3px;
+            transition: box-shadow 0.7s ease;
+            margin-bottom: 30px;
+            position: relative; /* Necessary for child absolute positioning */
+        }
+        
+        .portfolio-box img {
+            position: absolute; /* Enables movement within the container */
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: transform 7s ease; /* Smooth scrolling effect */
+        }
+        
+        .portfolio-box:hover img {
+            transform: translateY(-80%); /* Moves the image upwards to reveal the hidden part */
+        }
+        
+        .portfolio-box:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Emphasize the box on hover */
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
+    <div class="container-fluid ">
+            <div class="row">
+                <div class="navbar">
+                    <div class="container">
+                    <div class="logo">
+                        <img src="img/startup-healer-logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="navbar-items">
+                        <ul class="list-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="about.html">About Us <i class="fa navcticn fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                                    <li><a href="about.html#choose">Why Choose Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="allservice.html">Services <i class="fa navcticn fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <ul class="dropdown service">
+                                    <li><a href="startup.html">Start-Up Help</a></li>
+                                    <li><a href="companyIn.html">Company Incorporation</a></li>
+                                    <li><a href="Registration.html">Registration</a></li>
+                                    <li><a href="GSTworks.html">GST Works</a></li>
+                                    <li><a href="Taxfilling.html">TAX Filing</a></li>
+                                    <li><a href="certification.html">Certifications</a></li>
+                                    <li><a href="mandcompli.html"> Mandatory Compliance</a></li>
+                                    <li><a href="annualCom.html">Annual Compliance</a></li>
+                                    <li><a href="website.html">Website Designing</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                        <div class="btn">
+                            <a href="joinus.html"> <button class="btn-primary">Join Us</button></a>
+                             <a href="contactus.html"><button class="btn-secondry">Contact Us</button></a>
+                         </div>
+                    </div>
+                         <!-- Mobile Toggle Button -->
+                <div class="navbar-toggle" id="navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+
+
+
+    <!-- <<<<<<<<<<<<------Marquueeee->>>>>>>> -->
+    <div class="line">
+        <marquee behavior="scroll" direction="left">
+            Disclaimer : That We Only Provide Consultancy Services And Are Not Affiliated With Any Government Or
+            Non-Government Organization.
+        </marquee>
+    </div>
+    <!-- <<<<<<<<<<<<------MarquueeeeEnd->>>>>>>> -->
+
+    <!--<<<<<<<<<<<<<<< about>>>>>>>>>>>>>>>>>>>> -->
+    <section class="background">
+        <div class="container">
+            <div class="row">
+                <div class="about-main">
+                    <div class="textmo-main">
+                        <div class="plan" style="margin-bottom: 10px; "></div>
+                        <div class="sactag">
+                            Page
+                        </div>
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<<<<<<<<<<<<<<< about>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- <<<<<<<<<<<portfolio>>>>>>>>>>>> -->
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="portfolio-box">
+                    <a data-fancybox="gallery" href="/img/site1.jpg" aria-label="view larger image of site">
+                        <img src="/img/site1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="section-footer">
+                            <div class="row">
+                                <div class="col-sm-12 d-flex">
+                                    <div class="col-sm-3 f-points">
+                                        <h3>Useful Links</h3>
+                                        <div class="links">
+                                            <ul class="menu">
+                                                <li>Home</li>
+                                                <li>About Us</li>
+                                                <li>Services</li>
+                                                <li>Contact Us</li>
+                                                <li>Grievance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-sm-3 f-points">
+                                            <h3>Company Policies</h3>
+                                            <div class="links">
+                                                <ul class="menu">
+                                                    <li> Privacy & Policies</li>
+                                                    <li>Pricing Policy</li>
+                                                    <li>Refund and return policies</li>
+                                                    <li>Disclaimer</li>
+                                                    <li>Terms & Conditions</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-sm-3 f-points">
+                                            <h3>Top Services</h3>
+                                            <div class="links">
+                                                <ul class="menu">
+                                                    <li> Startup India Certification</li>
+                                                    <li>Certifications</li>
+                                                    <li> GST Works</li>
+                                                    <li> Website Designing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 secution">
+                                        <img src="/img/startup-healer-logo-removebg-preview.png" alt="">
+                                        <div class="fsocial">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com" target="_blank"
+                                                        aria-label="Facebook">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li> <a href="https://www.instagram.com" target="_blank"
+                                                        aria-label="Instagram">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li> <a href="https://www.linkedin.com" target="_blank"
+                                                        aria-label="LinkedIn">
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                    </a></li>
+                                                <li><a href="https://www.youtube.com" target="_blank"
+                                                        aria-label="YouTube">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pay-now-btn">
+                                            <a href="#" class="pay-now-a">Pay Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="container">
+                <div class="row">
+                    <div class="footer-end">
+                        <p>Copyright ©
+                            <label for="" class="Footer-span">2024</label>
+                            <b>Start-Up Healer Private Limited</b>
+                            . All Rights Reserved. | Design and Developed By
+                            <a href="">Start-Up Healer Private Limited</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+
+
+
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script src="main.js"></script>
+
+</body>
+
+</html>

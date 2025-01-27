@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <<<<---bootstrap link->>>>  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <<<<---icon-font->>>>  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <!-- <<<<---style.css->>>>  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+        .join-text {
+            padding: 100px 115px 0 57px;
+
+        }
+
+        .join-text h1 {
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .join-text p {
+            color: #333333;
+            font-family: "Poppins", Sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            display: inline-block;
+            width: 95%;
+        }
+
+        .apply1 {
+            width: 20%;
+            padding: 20px 0px 20px 0px;
+            font-weight: 600;
+            color: #000000 !important;
+            background-color: #FFBA0000;
+            background-image: url('/img/Rectangle-2775.png');
+            background-position: 0px 0px;
+            text-decoration: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 17px;
+            display: inline-block;
+            position: relative;
+            display: inline-block;
+            line-height: 1;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: nowrap;
+            vertical-align: middle;
+            text-align: center;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+        }
+
+        .apply1::before {
+            position: absolute;
+            content: "";
+            border-radius: inherit;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-size: 102% 102%;
+            opacity: 0;
+
+        }
+
+        .join-img {
+            margin: 100px 35px 0 -80px;
+        }
+
+        .join-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .join-us {
+                flex-direction: column-reverse;
+            }
+            .join-img {
+                margin: 0;
+                margin-top: 30px;
+            }
+            .join-text {
+                padding: 0;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/startup-healer-logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="navbar-items">
+                        <ul class="list-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="about.html">About Us <i class="fa navcticn fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                                    <li><a href="about.html#choose">Why Choose Us</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="allservice.html">Services <i class="fa navcticn fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <ul class="dropdown service">
+                                    <li><a href="startup.html">Start-Up Help</a></li>
+                                    <li><a href="companyIn.html">Company Incorporation</a></li>
+                                    <li><a href="Registration.html">Registration</a></li>
+                                    <li><a href="GSTworks.html">GST Works</a></li>
+                                    <li><a href="Taxfilling.html">TAX Filing</a></li>
+                                    <li><a href="certification.html">Certifications</a></li>
+                                    <li><a href="mandcompli.html"> Mandatory Compliance</a></li>
+                                    <li><a href="annualCom.html">Annual Compliance</a></li>
+                                    <li><a href="website.html">Website Designing</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                        <div class="btn">
+                            <a href="joinus.html"> <button class="btn-primary">Join Us</button></a>
+                            <a href="contactus.html"><button class="btn-secondry">Contact Us</button></a>
+                        </div>
+                    </div>
+                    <!-- Mobile Toggle Button -->
+                    <div class="navbar-toggle" id="navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+
+
+    <!-- <<<<<<<<<<<<------Marquueeee->>>>>>>> -->
+    <div class="line">
+        <marquee behavior="scroll" direction="left">
+            Disclaimer : That We Only Provide Consultancy Services And Are Not Affiliated With Any Government Or
+            Non-Government Organization.
+        </marquee>
+    </div>
+    <!-- <<<<<<<<<<<<------MarquueeeeEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<<<<<<<JOINus start>>>>>>>>>>>>>>>> -->
+    <div class="container">
+        <div class="row join-us">
+            <div class="col-sm-8">
+                <div class="join-text">
+                    <h1>Redefine The Future Of Startups With Us.</h1>
+                    <p>Start-up Healer is dedicated to providing comprehensive services to transform startup dreams into
+                        thriving realities. Join our visionary team that has empowered countless startups to achieve
+                        remarkable success. With a proven track record of supporting thousands of ventures, we offer an
+                        unmatched opportunity to shape the future of the startup ecosystem.
+                        Be a part of a team that truly understands how to turn startup dreams into reality. Embrace a
+                        dynamic and innovative work environment where your entrepreneurial spirit will be celebrated and
+                        nurtured. Join us and become a driving force in revolutionizing the future of the startup
+                        ecosystem!</p><a href="" class="apply1">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="join-img">
+                    <img src="img/join1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <<<<<<<<<<<IncorporationProcess>>>>>>>>>>>> -->
+
+    <div class="container incor">
+        <div class="row">
+            <div class="service-text">
+                <h2>Application And Recruitment Process</h2>
+            </div>
+            <div class="col-sm-12 process">
+                <div class=" col-sm-6 process1">
+                    <div class="icon">1</div>
+                    <div class="infocont">
+                        <h3>Review Job Descriptions</h3>
+                        <p>Visit our Careers page on the company website and carefully
+                            <br>
+                            review the detailed job descriptions for the positions you are
+                            <br>
+                            interested in. Pay attention to the qualifications, responsibilities,
+                            <br>
+                            and requirements listed for each role.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="joining">
+                    <img src="/img/joining1.png" alt="">
+                </div>
+                <div class=" col-sm-6 process1">
+                    <div class="icon">2</div>
+                    <div class="infocont">
+                        <h3>Prepare Your Application</h3>
+                        <p>Prepare a comprehensive application package that includes
+                            <br>
+                            your updated resume, a tailored
+                            cover letter, and any other
+                            <br>
+                            relevant supporting documents such as portfolio samples or
+                            <br>
+                            certifications. Make sure your application highlights your
+                            <br>
+                            relevant skills, experiences, and
+                            enthusiasm for startups.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="joining2">
+                <img src="/img/joining2.png" alt="">
+            </div>
+            <div class="col-sm-12 process">
+                <div class=" col-sm-6 process1">
+                    <div class="icon">3</div>
+                    <div class="infocont">
+                        <h3>Submit Application</h3>
+                        <p>Apply from career page located on our website or Send your
+                            <br>
+                            application via email to
+                            hr@startupHealer.com - Use a clear
+                            <br>
+                            and professional subject line that includes the position
+                            title you
+                            <br>
+                            are applying for. Ensure that your application is well-formatted
+                            <br>
+                            and free of any
+                            errors.
+                        </p>
+                    </div>
+                </div>
+                <div class="joining">
+                    <img src="/img/joining1.png" alt="">
+                </div>
+                <div class=" col-sm-6 process1">
+                    <div class="icon">4</div>
+                    <div class="infocont">
+                        <h3> Initial Screening</h3>
+                        <p>Our HR team will review all received applications and conduct <br> an initial screening based
+                            on
+                            the qualifications and <br> requirements outlined in the job descriptions. If you meet the
+                            <br>
+                            initial criteria, you will be shortlisted for further evaluation.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="joining2">
+                <img src="/img/joining2.png" alt="">
+            </div>
+            <div class="col-sm-12 process">
+                <div class=" col-sm-6 process1">
+                    <div class="icon">5</div>
+                    <div class="infocont">
+                        <h3>Interviews</h3>
+                        <p>If selected, you will be invited for interviews, which may include <br> multiple rounds.
+                            These
+                            interviews may be conducted in person, <br> via video conferencing, or over the phone. The
+                            interviews will <br> assess your skills, experiences, cultural fit, and passion for <br>
+                            startups. Be
+                            prepared to answer behavioral and technical questions <br> related to the position you
+                            applied
+                            for.
+                        </p>
+                    </div>
+                </div>
+                <div class="joining">
+                    <img src="/img/joining1.png" alt="">
+                </div>
+                <div class=" col-sm-6 process1">
+                    <div class="icon">6</div>
+                    <div class="infocont">
+                        <h3>Assessments or Tests
+                        </h3>
+                        <p>Depending on the role, you may be required to complete <br> assessments, tests, or
+                            assignments to
+                            evaluate your skills and <br> capabilities. This may include technical tests, case studies,
+                            or <br>
+                            presentations. Further instructions will be provided during the <br> interview process.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="joining2">
+                <img src="/img/joining2.png" alt="">
+            </div>
+            <div class="col-sm-12 process">
+                <div class=" col-sm-6 process1">
+                    <div class="icon">7</div>
+                    <div class="infocont">
+                        <h3>Reference Checks</h3>
+                        <p>As a final step before making a hiring decision, we may <br> conduct reference checks with
+                            your
+                            previous employers or <br> professional contacts. Please ensure you have provided <br>
+                            accurate and
+                            up-to-date references.
+                        </p>
+                    </div>
+                </div>
+                <div class="joining">
+                    <img src="/img/joining1.png" alt="">
+                </div>
+                <div class=" col-sm-6 process1">
+                    <div class="icon">8</div>
+                    <div class="infocont">
+                        <h3>Job Offer
+                        </h3>
+                        <p>If you successfully pass all stages of the selection process and <br> are selected as the top
+                            candidate, our HR team will extend a <br> job offer to you. The offer will include details
+                            such
+                            as <br> compensation, benefits, start date, and other relevant terms <br> and conditions.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="joining2">
+                <img src="/img/joining2.png" alt="" style="width: 500px; margin: 62px 0 -60px 386px;">
+            </div>
+            <div class=" col-sm-6 process1" style="    margin: auto;   margin-top: 60px;">
+                <div class="icon">9</div>
+                <div class="infocont">
+                    <h3>Onboarding
+                    </h3>
+                    <p>Once you accept the job offer, our HR team will guide you <br> through the onboarding process,
+                        which
+                        may include <br> completing necessary paperwork, setting up your employee <br> accounts, and
+                        providing you
+                        with relevant information to help <br> you smoothly transition into your new role.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <<<<<<<<<<<IncorporationProcessEnd>>>>>>>>>>>> -->
+
+    <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="section-footer">
+                    <div class="row">
+                        <div class="col-sm-12 d-flex">
+                            <div class="col-sm-3 f-points">
+                                <h3>Useful Links</h3>
+                                <div class="links">
+                                    <ul class="menu">
+                                        <li>Home</li>
+                                        <li>About Us</li>
+                                        <li>Services</li>
+                                        <li>Contact Us</li>
+                                        <li>Grievance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-sm-3 f-points">
+                                    <h3>Company Policies</h3>
+                                    <div class="links">
+                                        <ul class="menu">
+                                            <li> Privacy & Policies</li>
+                                            <li>Pricing Policy</li>
+                                            <li>Refund and return policies</li>
+                                            <li>Disclaimer</li>
+                                            <li>Terms & Conditions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="col-sm-3 f-points">
+                                    <h3>Top Services</h3>
+                                    <div class="links">
+                                        <ul class="menu">
+                                            <li> Startup India Certification</li>
+                                            <li>Certifications</li>
+                                            <li> GST Works</li>
+                                            <li> Website Designing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 secution">
+                                <img src="/img/startup-healer-logo-removebg-preview.png" alt="">
+                                <div class="fsocial">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li> <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li> <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a></li>
+                                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="pay-now-btn">
+                                    <a href="#" class="pay-now-a">Pay Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="footer-end">
+                <p>Copyright ©
+                    <label for="" class="Footer-span">2024</label>
+                    <b>Start-Up Healer Private Limited</b>
+                    . All Rights Reserved. | Design and Developed By
+                    <a href="">Start-Up Healer Private Limited</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
