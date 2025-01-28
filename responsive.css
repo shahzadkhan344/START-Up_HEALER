@@ -97,7 +97,8 @@
 
     .certificate button {
         margin-left: 0%;
-        margin-top: 0px;
+        margin-top: 2px;
+        margin-bottom: 10px;
     }
 
     .process {
