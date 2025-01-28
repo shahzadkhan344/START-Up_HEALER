@@ -368,7 +368,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
     .list-items {
         list-style: none;
         display: flex;
