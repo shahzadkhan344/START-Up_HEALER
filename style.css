@@ -1394,8 +1394,8 @@ textarea {
 
 .social-icons {
     position: fixed;
-    bottom: 10px;
-    right: -10px;
+    bottom: 150px;
+    right: 2px;
     display: flex;
     flex-direction: column;
     gap: 10px;
