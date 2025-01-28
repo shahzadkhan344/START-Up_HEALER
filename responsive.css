@@ -52,6 +52,7 @@
     .banner1 {
         flex-direction: column-reverse;
     }
+
     .text h1 {
         font-weight: 900;
         font-size: 26px;
@@ -62,6 +63,7 @@
         font-size: 11px;
         text-align: center;
     }
+
     .step {
         width: 80%;
     }
@@ -146,10 +148,12 @@
     .disclaimer-text {
         margin-top: 10px;
     }
+
     .disclaimer-text p {
         font-size: 14px;
         line-height: 1.3;
     }
+
     .flxcontrol h2 {
         text-align: center;
     }
@@ -176,13 +180,21 @@
         min-width: 100%;
     }
 
-    .meeting-btn{
+    .meeting-btn {
         margin: 10px 0;
     }
 
     .button-schedule-meeting {
         font-size: 14px;
         padding: 8px;
+    }
+
+    .main-certificate {
+        flex-direction: column;
+    }
+
+    .certificate {
+        width: 80%;
     }
 }
 
@@ -193,9 +205,10 @@
         font-size: 14px;
     }
 
-    .meeting-btn{
+    .meeting-btn {
         margin: 10px 0;
     }
+
     .button-schedule-meeting {
         font-size: 12px;
     }
@@ -203,9 +216,12 @@
     .address p {
         font-size: 12px;
     }
-    .rbdr form input, textarea {
+
+    .rbdr form input,
+    textarea {
         width: 90% !important;
     }
+
     .rbdr form select {
         width: 90% !important;
     }
@@ -282,8 +298,12 @@
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .mission-box, .cheap-rate-box, .trophy-box {
-        grid-template-columns: 1fr; /* Stack content vertically */
+
+    .mission-box,
+    .cheap-rate-box,
+    .trophy-box {
+        grid-template-columns: 1fr;
+        /* Stack content vertically */
     }
 
     .text-content {
@@ -344,5 +364,96 @@
     .figure img {
         width: 100%;
         height: auto;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .list-items {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        margin-top: 35px;
+        margin-right: 0px;
+    }
+
+    .btn-grp button {
+        white-space: nowrap;
+    }
+
+    .ban1 {
+        padding: 0px;
+        margin-top: 48px;
+        margin-right: -44px;
+    }
+
+    .about {
+        padding: 00px;
+        margin-top: 20px;
+    }
+
+    .about-ab {
+        display: flex;
+    }
+
+    .line1 {
+        height: 3px;
+        width: 44px;
+        background: #42b6d7;
+        margin: 8px 8px 0 0px;
+    }
+
+    .image-section,
+    .text-section {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section {
+        max-width: 600px;
+    }
+
+    .text-section h2 {
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-section h1 {
+        color: #000;
+        font-size: 23px;
+    }
+
+    .text-section p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .certificate button {
+        margin-top: 13px;
+    }
+    .col-sm-3 {
+        flex: 1 1 45%;
+        max-width: 32%;
+        margin: 10px 0;
+    }
+    .certificate {
+        height: 333px;
+    }
+    .process1 {
+        margin-left: 23px;
+        width: 50%;
+    }
+    .joining2 img {
+        width: 340px;
+    }
+    .joining img {
+        margin: 375px 0px 0 -37px;
+        width: 119px;
     }
 }

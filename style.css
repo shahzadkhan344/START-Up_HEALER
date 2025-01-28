@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 h1,
@@ -211,6 +212,7 @@ li a:hover {
     line-height: 1.7;
     margin-top: 89px;
 }
+
 
 .ban1 {
     padding: 27px;
@@ -614,9 +616,16 @@ li a:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.527);
 }
 
+.main-certificate {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
 .certificate {
     position: relative;
-    /* Needed for ::before positioning */
+    width: 32%;
     height: 378px;
     background-color: #ffffff28;
     border: 1px solid gainsboro;
@@ -670,13 +679,15 @@ li a:hover {
     transform: scale(1.1);
 }
 
-.certificate:hover i, .certificate:hover h3 {
+.certificate:hover i,
+.certificate:hover h3 {
     color: #FFFFFF;
 }
+
 .certificate h3 {
     font-weight: 600;
     font-size: 20px;
-    color: #185e18 ;
+    color: #185e18;
     text-align: center;
     margin-top: 23px;
     z-index: 1;
@@ -702,7 +713,7 @@ li a:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 
@@ -1378,4 +1389,44 @@ textarea {
     font-size: 50px;
     font-weight: 700;
     margin-top: 0;
+}
+
+
+.social-icons {
+    position: fixed;
+    bottom: 10px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #000;
+    /* Icon color */
+}
+
+.social-icons a:hover i {
+    color: #42b6d7;
+    /* Hover icon color */
 }
